@@ -20,6 +20,6 @@ Problema: grep no reconocido en el símbolo del sistema de Windows.
 docker ps | findstr srv-web
 ```
 
-##Conclusión
+## Conclusión
 La práctica permitió empezar mis primeros pasos en Docker, se aprendió la sintaxis
 y funcionalidad de diferentes comandos y herramientas según el entorno.
