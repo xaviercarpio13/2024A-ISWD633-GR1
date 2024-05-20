@@ -24,13 +24,17 @@ docker pull hello-world:tag
 ```
 
 Descargar la imagen **hello-world**
-# COMPLETAR
+```
+docker pull hello-world
+```
 
 **¿Qué es nginx**
-# COMPLETAR 
+Es un servidor proxy inverso de código abierto para los protocolos HTTP, HTTPS, SMTP, POP3 e IMAP, así como un equilibrador de carga, caché HTTP y un servidor web (servidor de origen).
 
 Descargar la imagen  **nginx** en la versión **alpine**
-# COMPLETAR
+```
+docker pull nginx:alpine
+```
 
 ### Listar imágenes
 
@@ -39,6 +43,7 @@ docker images
 ```
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
+![image](https://github.com/xaviercarpio13/2024A-ISWD633-GR1/assets/94008723/c8176f88-2218-4692-bea8-4b28913bc7c8)
 
 **Identificadores**
 En Docker, se utilizan varios identificadores para diferenciar de manera única los elementos del sistema, como imágenes, contenedores, volúmenes y redes. Estos identificadores son generados automáticamente por Docker y son únicos dentro del contexto del sistema Docker en el que se encuentran. 
@@ -52,10 +57,14 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
-# COMPLETAR
+```
+docker inspect hello-world
+```
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
+Docker utiliza un algoritmo llamado UUID (Universally Unique Identifier) para crear los identificadores únicos (ID).
+Formato: Un UUIDv4 tiene la forma xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx, donde x es un valor hexadecimal cualquiera (0-9, a-f), y y es un valor hexadecimal que restringe algunos bits a valores específicos (8, 9, A, o B).
+
 
 ### Filtrar imágenes
 
@@ -71,8 +80,10 @@ Eliminar permanentemente la imagen de tu sistema Docker.
 docker rmi <nombre imagen>:<tag>
 ```
 
-Eliminar la imagen hello-world 
-# COMPLETAR
+Eliminar la imagen hello-world
+```
+docker rmi hello-world
+```
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
 Cuando eliminas una imagen Docker, Docker no elimina automáticamente los contenedores que se han creado a partir de esa imagen. Esto significa que, aunque hayas eliminado la imagen, el contenedor seguirá ejecutándose normalmente.  
