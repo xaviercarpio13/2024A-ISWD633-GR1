@@ -4,7 +4,7 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
-# COMPLETAR 
+Las imágenes pueden existir sin un contenedor, mimentras que los contenedores necesitan ejecutar una imagen. Los contenedores necesitan de las imágenes para entorno de ejecución y correr la aplicación
 
 ![Imagen y contenedores](imagenes/imagenYcontenedores.JPG)
 ## Comandos para imágenes
@@ -13,14 +13,14 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 Descarga la última versión de la imagen disponible en el registro de Docker.
 
 ```
-docker pull <nombre imagen> 
+docker pull hello-world
 ```
 
 Descarga una versión específica de la imagen, cada imagen tiene etiquetas (tags) para diferentes versiones.
 Una imagen puede tener la etiqueta latest para representar la última versión, si no se especifica una etiqueta se hará referencia a la versión latest.
 
 ```
-docker pull <nombre imagen>:<tag>
+docker pull hello-world:tag
 ```
 
 Descargar la imagen **hello-world**
