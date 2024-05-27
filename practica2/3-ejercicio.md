@@ -1,9 +1,13 @@
 ### Crear contenedor de Postgres sin que exponga los puertos. Usar la imagen: postgres:11.21-alpine3.17
-# COMPLETAR
+```
+docker run -d --name prac2 -e POSTGRES_PASSWORD=admin postgres:11.21-alpine3.17
+ae6c366fe99a4cb72dfc8e9d476807305ead6332c281f024acd379e4c42994dd
+
+```
 
 ### Crear un cliente de postgres. Usar la imagen: dpage/pgadmin4
 
-# COMPLETAR
+
 
 La figura presenta el esquema creado en donde los puertos son:
 - a: (completar con el valor)
