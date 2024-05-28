@@ -48,8 +48,23 @@ docker network ls
 
 ![Imagen](imagenes/esquema-ejercicio-redes.PNG)
 
-# COLOCAR UNA CAPTURA DE LAS REDES EXISTENTES CREADAS
+# REDES EXISTENTES CREADAS
+![image](https://github.com/xaviercarpio13/2024A-ISWD633-GR1/assets/94008723/32a48cdb-36d7-495d-9254-fa13965dc215)
 
-# COLOCAR UNA(S) CAPTURAS(S) DE LOS CONTENEDORES CREADOS EN DONDE SE EVIDENCIE A QUÉ RED ESTÁN VINCULADOS
 
-# Eliminar las redes cre
+# CONTENEDORES Y LA RED QUE ESTÁN VINCULADOS
+
+```
+docker inspect net-curso01
+```
+![image](https://github.com/xaviercarpio13/2024A-ISWD633-GR1/assets/94008723/a4675245-6e17-4019-8a44-15c76b89c651)
+
+
+
+```
+docker inspect net-curso02
+```
+
+![image](https://github.com/xaviercarpio13/2024A-ISWD633-GR1/assets/94008723/c9b4612f-b187-417e-97d4-b5c97f242c19)
+
+
