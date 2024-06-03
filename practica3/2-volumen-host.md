@@ -28,10 +28,11 @@ Ahora se accede al documento index.html dentro del contenedor y al acceder al se
 # COMPLETAR CON EL COMANDO
 
 ### ¿Qué sucede al crear nuevamente el mismo contenedor con volumen de tipo host a los directorios definidos anteriormente?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+La información almacenada en la carpeta host se refleja en la carpeta del contenedor, por lo que la configuración realizada es persistida.
 
 ### ¿Qué hace el comando pwd?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+Muestra el directorio actual en el que se está trabajando
+
 Si quieres incluir el comando pwd dentro de un comando de Docker, lo puedes hacer de diferentes maneras dependiendo del shell que estés utilizando.
 
 
