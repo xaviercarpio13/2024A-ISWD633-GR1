@@ -25,7 +25,10 @@ Ahora se accede al documento index.html dentro del contenedor y al acceder al se
 
 
 ### Eliminar el contenedor
-# COMPLETAR CON EL COMANDO
+```
+docker stop prac3
+docker rm prac3
+```
 
 ### ¿Qué sucede al crear nuevamente el mismo contenedor con volumen de tipo host a los directorios definidos anteriormente?
 La información almacenada en la carpeta host se refleja en la carpeta del contenedor, por lo que la configuración realizada es persistida.
