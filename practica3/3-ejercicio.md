@@ -8,6 +8,8 @@ docker network create net-wp
 ### Creacion contenedor wordpress
 ```
 docker run -d --name wordpress -v "C:\Users\xavic\OneDrive\Documentos\EPN\2024 - A\Construccion\Practica4\www" -p 9500:80 --network net-wp wordpress
+
+{Comando incorrecto, se corrige mas adelante}
 ```
 
 ### Creacion contenedor mysql
