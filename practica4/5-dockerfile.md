@@ -53,17 +53,19 @@ docker build -t <nombre imagen>:<version> .
 ### Ejecutar el archivo Dockerfile y construir una imagen en la versión 1.0
 _Puedes copiar y ejecutar directamente. No olvides verificar en qué directorio se encuentra el archivo Dockerfile
 ```
-
+docker build -t myapp:1.0 .
 ```
 
 **¿Cuántos pasos se han ejecutado?**
-# RESPONDER 
+Se han ejecutado 16 pasos en total 
 
 ### Inspeccionar la imagen creada
-# COMPLETAR CON UNA CAPTURA
+![image](https://github.com/xaviercarpio13/2024A-ISWD633-GR1/assets/94008723/4ae0b415-5cdc-4b7e-b293-b9db23ba4006)
+
 
 **Modificar el archivo index.html para incluir su nombre**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
+Se han ejecutado 15 pasos esta vez, siendo el paso [auth] library/centos:pull token for registry-1.docker.io   el que no se ejecuta esta vez
 
 ## Mecanismo de caché
 Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso de construcción y evitar la repetición de pasos que no han cambiado. Cada instrucción en un Dockerfile crea una capa en la imagen final. Docker intenta reutilizar las capas de una construcción anterior si no han cambiado, lo que reduce significativamente el tiempo de construcción.
@@ -75,14 +77,15 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 
 ### Crear un contenedor a partir de las imagen creada, mapear todos los puertos
 ```
-
+docker run -d --name practica4 -P myapp:1.0
 ```
 
 ### ¿Con que puerto host se está realizando el mapeo?
-# COMPLETAR CON LA RESPUESTA
+80/tcp -> 0.0.0.0:32768
+El puerto 80 del contenedor está mapeado con el puerto 32768 del host
 
 **¿Qué es una imagen huérfana?**
-# COMPLETAR CON LA RESPUESTA
+Imagen que no está asociada a ningún contenedor activo o detenido
 
 ### Identificar imágenes huérfanas
 ```
